@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://deepcube.igb.uci.edu/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+    <title>Deep Cube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./static/main.css">
+
+
+
+    <!--[if lt IE 9]>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+    <!-- Bootstrap -->
+    <link href="./static/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./static/main.css">
+
+
+
+  </head>
+  <body>
+
+<div class="container">
+  <center>
+  <h1>Solve the Rubik's Cube Using Deep Learning</h1>
+	<div id="program_container" class="container">
+		<div id="solution_container" class="container">
+			<button disabled="" id="first_state" type="button">&lt;&lt;</button>
+			<button disabled="" id="prev_state" type="button">&lt;</button>
+			<button disabled="" id="next_state" type="button">&gt;</button>
+			<button disabled="" id="last_state" type="button">&gt;&gt;</button>
+			<h4 id="solution_text">Solution:</h4>
+		</div>
+
+		<div id="cube_div" class="container" style="padding: 60px">
+			<section class="cube_container">
+				<div id="cube">
+					<figure id="front" class="front">
+					</figure>
+					<figure id="back" class="back">
+					</figure>
+					<figure id="right" class="right">
+					</figure>
+					<figure id="left" class="left">
+					</figure>
+					<figure id="top" class="top">
+					</figure>
+					<figure id="bottom" class="bottom">
+					</figure>
+				</div>
+			</section>
+		</div>
+
+		<br>
+
+		<div id="button_container" class="container">
+			<button disabled="" id="scramble" type="button">Scramble</button>
+			<button disabled="" id="solve" type="button">Solve!</button>
+		</div>
+	</div>
+  </center>
+</div>
+
+<br>
+<center>
+	<h4>
+		Use the mouse to turn the cube.
+
+	</h4>
+	<h4>
+		Turn the faces with the U/D/L/R/B/F keys.
+		Hold shift to turn faces couter-clockwise.
+	</h4>
+	<h4>
+		Press scramble to randomly scramble the cube.
+		Press solve to solve the cube using deep learning!
+	</h4>
+</center>
+
+<br>
+<div class="well well-lg">
+	<center>
+	<!--<a href="https://codeocean.com/capsule/5723040/">Source Code</a>-->
+	<br>
+	<br>
+	<span style="color:black">If you find this research useful to your work, please cite the following papers:</span><br><br>
+
+	<!--<span class="paper-title"><a href="https://www.nature.com/articles/s42256-019-0070-z.epdf?shared_access_token=-pCSsZa_J9bM8VyXLZLRctRgN0jAjWel9jnR3ZoTv0Osb8UCgUm5AQaSCMHWqWzsyV3KBcb13SAW-9IL1pAGd1HcSk40JSEjhoaBAi0ePvYh_5Dul6LvK0oJY1KI0ULo9O9HCut_y7aCTc93Th8m5g%3D%3D">Solving the Rubik's Cube with Deep Reinforcement Learning and Search</a></span><br>!-->
+	<span class="paper-authors">Forest Agostinelli*, Stephen McAleer*, Alexander Shmakov*, Pierre Baldi</span><br>
+	<span class="paper-journal"><i>Nature Machine Intelligence</i>, Volume 1</span>,
+	<span class="paper-year">2019</span>
+	<br>
+	<br>
+	<!--<span class="paper-title"><a href="https://openreview.net/pdf?id=Hyfn2jCcKm">Solving the Rubik's Cube with Approximate Policy Iteration</a></span><br>-->
+	<span class="paper-authors">Stephen McAleer*, Forest Agostinelli*, Alexander Shmakov*, Pierre Baldi</span><br>
+	<span class="paper-journal"><i>In Proceedings of the 7th International Conference on Learning Representations (ICLR)</i></span>,
+	<span class="paper-year">2019</span>
+	</center>
+</div>
+
+
+
+<!--form action="." method="post">{% csrf_token %} </form>-->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="/./static/jquery.min.js"></script>-->
+<script src="./static/jquery.min.js"></script>
+
+<script src="./static/main.js"></script>
+
+<script src="./static/bootstrap.min.js"></script>
+
+  
+
+</body></html>
